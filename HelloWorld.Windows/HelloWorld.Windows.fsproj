@@ -11,6 +11,28 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\Resources\wwwroot\scripts\bundle.js.map">
+      <Link>Resources\wwwroot\scripts\bundle.js.map</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Resources\wwwroot\scripts\bundle.js">
+      <Link>Resources\wwwroot\scripts\bundle.js</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!--<Content Include="..\Resources\wwwroot\scripts\vendors.bundle.js">
+      <Link>Resources\wwwroot\scripts\vendors.bundle.js</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Resources\wwwroot\scripts\vendors.bundle.js.map">
+      <Link>Resources\wwwroot\scripts\vendors.bundle.js.map</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>-->
+    <Content Include="..\Resources\wwwroot\index.html">
+      <Link>Resources\wwwroot\index.html</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\HelloWorld.Interstellar\HelloWorld.Interstellar.fsproj" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />

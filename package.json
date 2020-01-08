@@ -1,0 +1,25 @@
+{
+  "name": "InterstellarFableHelloWorld",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jwosty <jwosty@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "cd HelloWorld.FableUI && webpack -P webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "fable-compiler": "^2.3.11",
+    "fable-loader": "^2.1.7",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
+  }
+}
