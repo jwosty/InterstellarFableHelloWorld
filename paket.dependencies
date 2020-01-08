@@ -1,0 +1,6 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: auto-detect
+nuget Interstellar.Core 0.2.0
+nuget Interstellar.Wpf.Chromium 0.2.0
