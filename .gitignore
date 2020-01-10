@@ -404,5 +404,7 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
-Content/wwwroot/scripts/bundle.js
-Content/wwwroot/scripts/bundle.js.map
+
+# Fable output
+Content/wwwroot/scripts/*bundle.js
+Content/wwwroot/scripts/*bundle.js.map

@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <Sdk Name="Yarn.MSBuild" />
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <CefSharpAnyCpuSupport>true</CefSharpAnyCpuSupport>
     <UseWpf>true</UseWpf>
+    <YarnBuildCommand>build</YarnBuildCommand>
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />
@@ -19,14 +21,14 @@
       <Link>Resources\wwwroot\scripts\bundle.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <!--<Content Include="..\Resources\wwwroot\scripts\vendors.bundle.js">
+    <Content Include="..\Resources\wwwroot\scripts\vendors.bundle.js">
       <Link>Resources\wwwroot\scripts\vendors.bundle.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Resources\wwwroot\scripts\vendors.bundle.js.map">
       <Link>Resources\wwwroot\scripts\vendors.bundle.js.map</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>-->
+    </Content>
     <Content Include="..\Resources\wwwroot\index.html">
       <Link>Resources\wwwroot\index.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

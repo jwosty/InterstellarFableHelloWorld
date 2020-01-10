@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D70E5AF0-0CB8-4FCF-896C-27B204279AFE}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		global.json = global.json
 		package.json = package.json
 		paket.dependencies = paket.dependencies
 		paket.lock = paket.lock
@@ -18,7 +19,7 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "HelloWorld.Windows", "Hello
 		{7D4ECAF8-87E9-4263-B70E-1FB8324C5746} = {7D4ECAF8-87E9-4263-B70E-1FB8324C5746}
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HelloWorld.FableUI", "HelloWorld.FableUI\HelloWorld.FableUI.fsproj", "{7D4ECAF8-87E9-4263-B70E-1FB8324C5746}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "HelloWorld.FableUI", "HelloWorld.FableUI\HelloWorld.FableUI.fsproj", "{7D4ECAF8-87E9-4263-B70E-1FB8324C5746}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
