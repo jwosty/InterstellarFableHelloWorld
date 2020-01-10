@@ -406,5 +406,5 @@ ASALocalRun/
 .localhistory/
 
 # Fable output
-Content/wwwroot/scripts/*bundle.js
-Content/wwwroot/scripts/*bundle.js.map
+Resources/wwwroot/scripts/*bundle.js
+Resources/wwwroot/scripts/*bundle.js.map
