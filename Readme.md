@@ -1,0 +1,3 @@
+# Interstellar+Fable Hello World
+
+This is a standalone application that integrates [Interstellar](https://github.com/jwosty/Interstellar) and [Fable](https://fable.io/). It's like [Electron](https://electronjs.org), except instead of using Javascript for the whole stack, it uses F# top-down. Ths app features a simple GUI built with [Elmish-React](https://elmish.github.io/react/). This can be run using Visual Studio just like any other application.
