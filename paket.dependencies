@@ -8,5 +8,6 @@ nuget Fable.Elmish
 nuget Fable.Elmish.React
 nuget Fable.React
 nuget Interstellar.Core 0.2.0
+nuget Interstellar.macOS.WebKit 0.2.0
 nuget Interstellar.Wpf.Chromium 0.2.0
 nuget Suave
