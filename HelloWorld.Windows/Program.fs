@@ -1,21 +1,24 @@
 ﻿namespace HelloWorld.Windows
 open System
-open System.Windows
+open System.IO
+open System.Reflection
 open System.Threading
+open System.Windows
 open Interstellar
 open Interstellar.Chromium.Wpf
-open HelloWorld.Interstellar
 
 type App() =
     inherit Application(ShutdownMode = ShutdownMode.OnExplicitShutdown)
 
     override this.OnStartup e =
         base.OnStartup e
-        BrowserApp.run (HelloWorld.Interstellar.App.app ())
+        let asmRoot = Path.GetDirectoryName (Uri(Assembly.GetEntryAssembly().CodeBase).LocalPath)
+        let resources = Path.Combine (asmRoot, "Resources")
+        Thread.CurrentThread.Name <- "Main"
+        BrowserApp.run (HelloWorld.Interstellar.App.app resources)
 
 module Main =
     [<EntryPoint; STAThread>]
     let main argv =
-        Thread.CurrentThread.Name <- "Main"
         Interstellar.Chromium.Platform.Initialize ()
         (new App()).Run ()
