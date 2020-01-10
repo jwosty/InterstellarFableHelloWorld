@@ -1,6 +1,5 @@
 {
     "msbuild-sdks": {
-        "Yarn.MSBuild": "1.21.1",
         "MSBuild.Sdk.Extras": "2.0.54"
     }
 }
