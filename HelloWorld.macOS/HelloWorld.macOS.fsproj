@@ -31,6 +31,15 @@
     <UseRefCounting>true</UseRefCounting>
     <PlatformTarget>
     </PlatformTarget>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>BeforeBuild</type>
+          <command>yarn build</command>
+          <workingdir>${SolutionDir}</workingdir>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <EnableCodeSigning>false</EnableCodeSigning>
@@ -43,6 +52,15 @@
     <GenerateTailCalls>true</GenerateTailCalls>
     <PlatformTarget>
     </PlatformTarget>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>BeforeBuild</type>
+          <command>yarn build</command>
+          <workingdir>${SolutionDir}</workingdir>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -67,12 +85,29 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon-512.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon-512%402x.png" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <BundleResource Include="..\Resources\wwwroot\scripts\bundle.js.map">
+      <Link>Resources\wwwroot\scripts\bundle.js.map</Link>
+    </BundleResource>
+    <BundleResource Include="..\Resources\wwwroot\scripts\bundle.js">
+      <Link>Resources\wwwroot\scripts\bundle.js</Link>
+    </BundleResource>
+    <BundleResource Include="..\Resources\wwwroot\scripts\vendors.bundle.js">
+      <Link>Resources\wwwroot\scripts\vendors.bundle.js</Link>
+    </BundleResource>
+    <BundleResource Include="..\Resources\wwwroot\scripts\vendors.bundle.js.map">
+      <Link>Resources\wwwroot\scripts\vendors.bundle.js.map</Link>
+    </BundleResource>
+    <BundleResource Include="..\Resources\wwwroot\index.html">
+      <Link>Resources\wwwroot\index.html</Link>
+    </BundleResource>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <InterfaceDefinition Include="Main.storyboard" />
     <Compile Include="AppDelegate.fs" />
     <Compile Include="Main.fs" />
     <None Include="paket.references" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld.Interstellar\HelloWorld.Interstellar.fsproj" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
