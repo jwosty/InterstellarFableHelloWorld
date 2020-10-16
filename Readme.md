@@ -6,7 +6,7 @@ Here are the interesting bits to look at:
 
 * [HelloWorld.FableUI/FableApp.fs](HelloWorld.FableUI/FableApp.fs) - the Fable+Elmish+React UI, written in F# and transpiled to Javascript
 * [HelloWorld.Interstellar/App.fs](HelloWorld.Interstellar/App.fs) - the Interstellar BrowserApp definition, which handles the lifecycle of the windows, and also hosts and simple static file server for the transpiled Javascript
-* [HelloWorld.Windows/HelloWorld.Windows.fsproj](HelloWorld.Windows/HelloWorld.Windows.fsproj) - the Windows entry point
+* [HelloWorld.Windows/Program.fs](HelloWorld.Windows/Program.fs) - the Windows entry point
 * [HelloWorld.macOS/AppDelegate.fs](HelloWorld.macOS/AppDelegate.fs) - the macOS entry point
 
 ## Running
