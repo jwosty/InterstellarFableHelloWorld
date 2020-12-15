@@ -1,13 +1,12 @@
 source https://api.nuget.org/v3/index.json
 
-storage: none
 framework: auto-detect
 nuget Fable.Browser.Dom
 nuget Fable.Core
 nuget Fable.Elmish
 nuget Fable.Elmish.React
 nuget Fable.React
-nuget Interstellar.Core 0.2.0
-nuget Interstellar.macOS.WebKit 0.2.0
-nuget Interstellar.Wpf.Chromium 0.2.0
+nuget Interstellar.Core 0.3.0
+nuget Interstellar.macOS.WebKit 0.3.0
+nuget Interstellar.Wpf.Chromium 0.3.0
 nuget Suave
